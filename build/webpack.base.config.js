@@ -1,11 +1,10 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+import HtmlWebpackPlugin from 'html-webpack-plugin'
+import path from 'path'
 
-console.log(__dirname);
-
-module.exports = {
+export default {
   entry: './src/index.ts',
   output: {
-    path: __dirname + '/../dist/',
+    path: path.resolve() + '/../dist/',
     filename: 'app.js'
   },
   resolve: {

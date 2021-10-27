@@ -65,5 +65,3 @@ async function foo2() {
 }
 
 foo2()
-
-module.exports = 1
