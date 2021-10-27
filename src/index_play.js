@@ -65,3 +65,12 @@ async function foo2() {
 }
 
 foo2()
+
+function f(shouldInitialize) {
+  if (shouldInitialize) {
+    var x = 10;
+  }
+  return x;
+}
+
+console.log(f(true), f(false));
