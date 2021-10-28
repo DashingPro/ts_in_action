@@ -31,3 +31,16 @@ function theCityThatAlwaysSleeps() {
 
   return getCity();
 }
+
+let input = [1, 2];
+let [first, second] = input;
+console.log(first); // outputs 1
+console.log(second); // outputs 2
+
+function f([first, second]: [number, number]) {
+  console.log(first);
+  console.log(second);
+}
+f(input as [number, number]);
+
+console.log("test");

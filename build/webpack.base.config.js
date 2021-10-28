@@ -4,8 +4,9 @@ import path from 'path'
 export default {
   entry: './src/index.ts',
   output: {
-    path: path.resolve() + '/dist/',
-    filename: 'app.js'
+    path: path.resolve() + '/dist',
+    filename: 'app.js',
+    clean: true
   },
   resolve: {
     extensions: ['.js', '.ts', 'tsx']
